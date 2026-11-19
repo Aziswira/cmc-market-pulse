@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.pyc
+# Note: output/ is intentionally NOT ignored — the generated dashboard
+# and summary are kept committable as demo evidence.
