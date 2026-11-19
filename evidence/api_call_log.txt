@@ -1,0 +1,22 @@
+CMC Market Pulse — API call log
+Generated: 2026-11-19T14:44:55.516463+00:00
+Mode: LIVE
+Auth header: X-CMC_PRO_API_KEY: *** (redacted)
+
+Request: GET https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=100&convert=USD&sort=market_cap&cryptocurrency_type=coins
+Header:  X-CMC_PRO_API_KEY: ***
+HTTP status: 200
+credit_count (from API status block): 1
+Timestamp: 2026-11-19T14:44:54.156Z
+
+Request: GET https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest?convert=USD
+Header:  X-CMC_PRO_API_KEY: ***
+HTTP status: 200
+credit_count (from API status block): 1
+Timestamp: 2026-11-19T14:44:55.225Z
+
+Request: GET https://pro-api.coinmarketcap.com/v3/fear-and-greed/latest
+Header:  X-CMC_PRO_API_KEY: ***
+HTTP status: 200
+credit_count (from API status block): 1
+Timestamp: 2026-11-19T14:44:56.221Z
