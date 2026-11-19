@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CMC Market Pulse</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+         background:#0b0e14; color:#e6e9ef; }
+  header { padding:28px 24px 8px; }
+  h1 { margin:0 0 4px; font-size:28px; }
+  h2 { margin:28px 0 10px; font-size:19px; }
+  main { padding:0 24px 32px; max-width:1100px; margin:0 auto; }
+  .muted { color:#8b93a7; }
+  .demo-note { background:#3a2f10; border:1px solid #8a6d1a; color:#f5d97a;
+               padding:10px 14px; border-radius:8px; }
+  .cards { display:flex; flex-wrap:wrap; gap:12px; margin:18px 0 4px; }
+  .card { background:#141926; border:1px solid #232a3d; border-radius:10px;
+          padding:14px 18px; min-width:170px; flex:1; }
+  .card .label { color:#8b93a7; font-size:12px; text-transform:uppercase; letter-spacing:.06em; }
+  .card .value { font-size:22px; font-weight:700; margin-top:4px; }
+  .card .sub { color:#8b93a7; font-size:13px; }
+  table { width:100%; border-collapse:collapse; background:#111624; border-radius:10px; overflow:hidden; }
+  th, td { padding:8px 10px; text-align:right; border-bottom:1px solid #1e2537; font-size:14px; }
+  th { color:#8b93a7; font-weight:600; }
+  td:nth-child(2), th:nth-child(2) { text-align:left; }
+  td:first-child, th:first-child { text-align:left; }
+  .pos { color:#2ebd85; } .neg { color:#f6465d; }
+  .alerts li { margin:6px 0; }
+  .bar-wrap { background:#1e2537; border-radius:4px; width:90px; height:8px; }
+  .bar { height:8px; border-radius:4px; }
+  .bar-pos { background:#2ebd85; } .bar-neg { background:#f6465d; }
+  footer { padding:18px 24px 28px; color:#8b93a7; font-size:13px; max-width:1100px; margin:0 auto; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📈 CMC Market Pulse</h1>
+  <p class="muted">Crypto market screener powered by the CoinMarketCap API — generated 2026-11-19 14:44 UTC</p>
+  
+</header>
+<main>
+  <section class="cards">
+    <div class="card"><div class="label">Total Market Cap</div><div class="value">$2.18T</div></div>
+    <div class="card"><div class="label">24h Volume</div><div class="value">$71.07B</div></div>
+    <div class="card"><div class="label">BTC Dominance</div><div class="value">58.949000633575%</div></div>
+    <div class="card"><div class="label">ETH Dominance</div><div class="value">10.126149917294%</div></div>
+    <div class="card"><div class="label">Fear &amp; Greed</div><div class="value">12</div><div class="sub">Extreme fear</div></div>
+  </section>
+
+  <h2>🚀 Top 10 Gainers (24h)</h2>
+  <table><tr><th>#</th><th>Coin</th><th>Price</th><th>1h %</th><th>24h %</th><th>7d %</th><th>Market Cap</th><th>24h Volume</th></tr><tr><td>106</td><td><strong>LUNC</strong> Terra Classic</td><td>$0.0000</td><td class="pos">+3.53%</td><td class="pos">+20.70%</td><td class="pos">+24.40%</td><td>$258.40M</td><td>$52.36M</td></tr>
+<tr><td>273</td><td><strong>PROS</strong> Pharos</td><td>$0.5709</td><td class="pos">+1.57%</td><td class="pos">+11.96%</td><td class="pos">+13.67%</td><td>$77.42M</td><td>$58.89M</td></tr>
+<tr><td>374</td><td><strong>CTC</strong> Creditcoin</td><td>$0.0733</td><td class="pos">+7.16%</td><td class="pos">+8.49%</td><td class="neg">-3.83%</td><td>$40.31M</td><td>$3.38M</td></tr>
+<tr><td>127</td><td><strong>AKT</strong> Akash Network</td><td>$0.5553</td><td class="pos">+0.42%</td><td class="pos">+7.07%</td><td class="neg">-5.27%</td><td>$166.60M</td><td>$3.95M</td></tr>
+<tr><td>275</td><td><strong>KNTQ</strong> Kinetiq</td><td>$0.2362</td><td class="pos">+2.31%</td><td class="pos">+6.72%</td><td class="neg">-23.25%</td><td>$76.53M</td><td>$84.72M</td></tr>
+<tr><td>197</td><td><strong>MEGA</strong> MegaETH</td><td>$0.0576</td><td class="pos">+1.08%</td><td class="pos">+6.52%</td><td class="pos">+25.76%</td><td>$65.11M</td><td>$26.45M</td></tr>
+<tr><td>462</td><td><strong>KTA</strong> Keeta</td><td>$0.0467</td><td class="pos">+2.47%</td><td class="pos">+5.00%</td><td class="neg">-1.32%</td><td>$29.70M</td><td>$1.35M</td></tr>
+<tr><td>464</td><td><strong>CSPR</strong> Casper</td><td>$0.0017</td><td class="pos">+0.63%</td><td class="pos">+4.23%</td><td class="neg">-8.29%</td><td>$29.37M</td><td>$4.73M</td></tr>
+<tr><td>472</td><td><strong>ARK</strong> Ark</td><td>$0.1430</td><td class="neg">-0.34%</td><td class="pos">+3.94%</td><td class="neg">-5.06%</td><td>$28.67M</td><td>$1.55M</td></tr>
+<tr><td>349</td><td><strong>HNT</strong> Helium</td><td>$0.2353</td><td class="pos">+1.75%</td><td class="pos">+3.38%</td><td class="neg">-5.87%</td><td>$43.85M</td><td>$2.17M</td></tr></table>
+
+  <h2>📉 Top 10 Losers (24h)</h2>
+  <table><tr><th>#</th><th>Coin</th><th>Price</th><th>1h %</th><th>24h %</th><th>7d %</th><th>Market Cap</th><th>24h Volume</th></tr><tr><td>388</td><td><strong>CFG</strong> Centrifuge</td><td>$0.0652</td><td class="neg">-0.03%</td><td class="neg">-14.11%</td><td class="neg">-19.89%</td><td>$37.64M</td><td>$26.58M</td></tr>
+<tr><td>332</td><td><strong>QUBIC</strong> Qubic</td><td>$0.0000</td><td class="neg">-4.49%</td><td class="neg">-7.04%</td><td class="neg">-6.25%</td><td>$48.75M</td><td>$1.46M</td></tr>
+<tr><td>293</td><td><strong>ZANO</strong> Zano</td><td>$4.04</td><td class="neg">-0.01%</td><td class="neg">-6.99%</td><td class="pos">+8.02%</td><td>$62.58M</td><td>$896,736.23</td></tr>
+<tr><td>129</td><td><strong>MON</strong> Monad</td><td>$0.0140</td><td class="neg">-1.29%</td><td class="neg">-6.46%</td><td class="neg">-17.65%</td><td>$164.99M</td><td>$25.52M</td></tr>
+<tr><td>73</td><td><strong>XDC</strong> XDC Network</td><td>$0.0287</td><td class="neg">-1.19%</td><td class="neg">-5.22%</td><td class="neg">-2.00%</td><td>$617.61M</td><td>$15.78M</td></tr>
+<tr><td>301</td><td><strong>PEAQ</strong> peaq</td><td>$0.0229</td><td class="pos">+1.75%</td><td class="neg">-5.02%</td><td class="neg">-6.56%</td><td>$59.94M</td><td>$2.24M</td></tr>
+<tr><td>504</td><td><strong>XVG</strong> Verge</td><td>$0.0016</td><td class="pos">+0.30%</td><td class="neg">-3.92%</td><td class="neg">-14.08%</td><td>$26.74M</td><td>$1.24M</td></tr>
+<tr><td>187</td><td><strong>0G</strong> 0G</td><td>$0.1259</td><td class="pos">+0.64%</td><td class="neg">-3.34%</td><td class="neg">-15.87%</td><td>$75.54M</td><td>$24.77M</td></tr>
+<tr><td>36</td><td><strong>M</strong> MemeCore</td><td>$0.8580</td><td class="pos">+0.02%</td><td class="neg">-2.23%</td><td class="pos">+6.69%</td><td>$1.97B</td><td>$2.45M</td></tr>
+<tr><td>311</td><td><strong>WEMIX</strong> WEMIX</td><td>$0.1161</td><td class="neg">-0.05%</td><td class="neg">-1.99%</td><td class="neg">-0.44%</td><td>$58.14M</td><td>$443,921.72</td></tr></table>
+
+  <h2>🔔 Movers Alert — |24h change| ≥ 5% (12 coins)</h2>
+  <ul class='alerts'><li><strong>LUNC</strong> Terra Classic — <span class="pos">+20.70% in 24h</span></li>
+<li><strong>CFG</strong> Centrifuge — <span class="neg">-14.11% in 24h</span></li>
+<li><strong>PROS</strong> Pharos — <span class="pos">+11.96% in 24h</span></li>
+<li><strong>CTC</strong> Creditcoin — <span class="pos">+8.49% in 24h</span></li>
+<li><strong>AKT</strong> Akash Network — <span class="pos">+7.07% in 24h</span></li>
+<li><strong>QUBIC</strong> Qubic — <span class="neg">-7.04% in 24h</span></li>
+<li><strong>ZANO</strong> Zano — <span class="neg">-6.99% in 24h</span></li>
+<li><strong>KNTQ</strong> Kinetiq — <span class="pos">+6.72% in 24h</span></li>
+<li><strong>MEGA</strong> MegaETH — <span class="pos">+6.52% in 24h</span></li>
+<li><strong>MON</strong> Monad — <span class="neg">-6.46% in 24h</span></li>
+<li><strong>XDC</strong> XDC Network — <span class="neg">-5.22% in 24h</span></li>
+<li><strong>PEAQ</strong> peaq — <span class="neg">-5.02% in 24h</span></li></ul>
+
+  <h2>🏆 Top 20 by Market Cap</h2>
+  <table><tr><th>#</th><th>Coin</th><th>Price</th><th>1h %</th><th>24h %</th><th>7d %</th><th>Market Cap</th><th>24h Volume</th></tr><th>24h bar</th><tr><td>1</td><td><strong>BTC</strong> Bitcoin</td><td>$63,867.36</td><td class="pos">+0.32%</td><td class="pos">+0.98%</td><td class="neg">-11.01%</td><td>$1.28T</td><td>$32.66B</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:6%"></div></div></td></tr>
+<tr><td>2</td><td><strong>ETH</strong> Ethereum</td><td>$1,805.43</td><td class="pos">+0.08%</td><td class="pos">+2.27%</td><td class="neg">-9.87%</td><td>$220.68B</td><td>$10.70B</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:14%"></div></div></td></tr>
+<tr><td>4</td><td><strong>BNB</strong> BNB</td><td>$592.27</td><td class="pos">+0.07%</td><td class="pos">+1.34%</td><td class="neg">-9.55%</td><td>$77.89B</td><td>$833.79M</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:8%"></div></div></td></tr>
+<tr><td>6</td><td><strong>XRP</strong> XRP</td><td>$0.9924</td><td class="pos">+0.35%</td><td class="pos">+1.28%</td><td class="neg">-3.58%</td><td>$63.03B</td><td>$1.78B</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:8%"></div></div></td></tr>
+<tr><td>7</td><td><strong>SOL</strong> Solana</td><td>$75.26</td><td class="pos">+0.52%</td><td class="pos">+2.20%</td><td class="neg">-7.49%</td><td>$44.55B</td><td>$2.16B</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:13%"></div></div></td></tr>
+<tr><td>8</td><td><strong>TRX</strong> TRON</td><td>$0.3119</td><td class="neg">-0.10%</td><td class="pos">+0.83%</td><td class="neg">-1.13%</td><td>$29.65B</td><td>$364.90M</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:5%"></div></div></td></tr>
+<tr><td>10</td><td><strong>ZEC</strong> Zcash</td><td>$945.97</td><td class="neg">-0.02%</td><td class="pos">+2.32%</td><td class="neg">-3.51%</td><td>$16.06B</td><td>$668.43M</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:14%"></div></div></td></tr>
+<tr><td>11</td><td><strong>XMR</strong> Monero</td><td>$502.63</td><td class="neg">-0.31%</td><td class="neg">-0.65%</td><td class="neg">-7.86%</td><td>$9.47B</td><td>$137.87M</td><td><div class="bar-wrap"><div class="bar bar-neg" style="width:4%"></div></div></td></tr>
+<tr><td>12</td><td><strong>DOGE</strong> Dogecoin</td><td>$0.0596</td><td class="pos">+0.09%</td><td class="pos">+1.22%</td><td class="neg">-8.80%</td><td>$9.35B</td><td>$435.14M</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:7%"></div></div></td></tr>
+<tr><td>15</td><td><strong>ADA</strong> Cardano</td><td>$0.1552</td><td class="neg">-0.06%</td><td class="pos">+2.01%</td><td class="neg">-8.57%</td><td>$5.72B</td><td>$232.11M</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:12%"></div></div></td></tr>
+<tr><td>17</td><td><strong>XLM</strong> Stellar</td><td>$0.1379</td><td class="neg">-0.02%</td><td class="neg">-1.33%</td><td class="neg">-4.28%</td><td>$4.89B</td><td>$127.76M</td><td><div class="bar-wrap"><div class="bar bar-neg" style="width:8%"></div></div></td></tr>
+<tr><td>18</td><td><strong>NEAR</strong> NEAR Protocol</td><td>$3.39</td><td class="neg">-0.14%</td><td class="pos">+2.87%</td><td class="neg">-0.49%</td><td>$4.45B</td><td>$599.90M</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:17%"></div></div></td></tr>
+<tr><td>20</td><td><strong>BCH</strong> Bitcoin Cash</td><td>$209.13</td><td class="neg">-0.03%</td><td class="pos">+1.15%</td><td class="neg">-7.81%</td><td>$4.21B</td><td>$103.19M</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:7%"></div></div></td></tr>
+<tr><td>21</td><td><strong>LTC</strong> Litecoin</td><td>$44.35</td><td class="neg">-0.11%</td><td class="pos">+0.95%</td><td class="neg">-9.39%</td><td>$3.45B</td><td>$183.67M</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:6%"></div></div></td></tr>
+<tr><td>22</td><td><strong>CC</strong> Canton</td><td>$0.0834</td><td class="neg">-0.01%</td><td class="pos">+0.80%</td><td class="neg">-6.03%</td><td>$3.34B</td><td>$15.20M</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:5%"></div></div></td></tr>
+<tr><td>23</td><td><strong>AVAX</strong> Avalanche</td><td>$7.13</td><td class="pos">+0.08%</td><td class="pos">+1.66%</td><td class="neg">-14.62%</td><td>$3.19B</td><td>$227.95M</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:10%"></div></div></td></tr>
+<tr><td>25</td><td><strong>SUI</strong> Sui</td><td>$0.7298</td><td class="neg">-0.03%</td><td class="pos">+1.70%</td><td class="neg">-7.91%</td><td>$3.02B</td><td>$252.42M</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:10%"></div></div></td></tr>
+<tr><td>26</td><td><strong>GRAM</strong> Gram (prev. Toncoin)</td><td>$1.03</td><td class="neg">-0.00%</td><td class="pos">+1.43%</td><td class="neg">-17.42%</td><td>$2.95B</td><td>$56.74M</td><td><div class="bar-wrap"><div class="bar bar-pos" style="width:9%"></div></div></td></tr>
+<tr><td>31</td><td><strong>HBAR</strong> Hedera</td><td>$0.0564</td><td class="pos">+0.32%</td><td class="neg">-0.34%</td><td class="neg">-12.61%</td><td>$2.50B</td><td>$45.44M</td><td><div class="bar-wrap"><div class="bar bar-neg" style="width:2%"></div></div></td></tr>
+<tr><td>35</td><td><strong>CRO</strong> Cronos</td><td>$0.0420</td><td class="pos">+0.14%</td><td class="neg">-1.81%</td><td class="neg">-11.65%</td><td>$2.18B</td><td>$7.28M</td><td><div class="bar-wrap"><div class="bar bar-neg" style="width:11%"></div></div></td></tr></table>
+</main>
+<footer>
+  Data: CoinMarketCap API — endpoints used:<br>GET https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest<br>GET https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest<br>GET https://pro-api.coinmarketcap.com/v3/fear-and-greed/latest (optional)<br>
+  Built for the DoraHacks “Build with CMC: API Hackathon” — Markets &amp; Trading Tools track.
+</footer>
+</body>
+</html>
